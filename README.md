@@ -10,16 +10,6 @@ CutAnalyser is a single-purpose utility script written in python 3 and tested in
 
 CutAnalyser.py [options] [-o OUTPUT] [-t TOOL] [-m MIN\_MH\_LEN] [-i TABLE]
 
-|Parameter| Description|
-| -h | Show help message and exits |
-| -v | Show program version number and exits |
-| -i | The tab-separated allele file that provides the main input data for the program. The table must contain a column with the wild type allele sequence, the modified allele sequence and a column indicating whether the mutation type is a deletion. |
-| -p | Prefix of output file (default: prefix of the input file) |
-| -o | Output directory to print result files to |
-| -t | Tool used to generate input file provided via -i; can be Cas-Analyser orCRISPResso (CA|CE). |
-| -m | Minimum length of microhomology in basepairs [int]. All microhomologies below this length will be excluded. |
-| verbose | Verbosely prints all results at each step. This can be useful for ensuring the program is handling the input data in the expected way. |
-
 Example:
 
 `CutAnalyser.py -i CRISPResso\_Alleles\_frequency\_table.txt  -o /home/ws/crispr/mhFinder/ -t CE -m 4`
