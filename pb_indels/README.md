@@ -1,1 +1,3 @@
-Detecting InDels in PacBio long amplicon reads 
+## Detecting InDels in PacBio long amplicon reads 
+
+``` bash pb_pipeline.sh ```
